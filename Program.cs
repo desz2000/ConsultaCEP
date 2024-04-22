@@ -12,25 +12,18 @@ class Program
     static async Task Main()
     {
         Console.WriteLine("Hora de descobrir seu endereço!");
-        Endereco adress = new Endereco();
 
-        Console.Write("Digite o seu CEP (apenas numeros): ");
-        adress.Cep = Console.ReadLine();
+        Services services = new Services();
 
-        var client = new RestClient("https://viacep.com.br/ws/");
-        var request = new RestRequest($"{adress.Cep}/json/", Method.Get);
+        string? resposta = "s";
 
-        var response = client.Execute(request);
-
-        if (response.IsSuccessful)
+        while(resposta == "s")
         {
-            adress = JsonConvert.DeserializeObject<Endereco>(response.Content);
-            Console.WriteLine($"Aqui esta o seu endereço: {adress.Logradouro}, {adress.Bairro}, {adress.Localidade} - {adress.Uf}");
-            //Console.WriteLine(response.Content);
+            services.ConsultaEndereco();
+
+            Console.WriteLine("Gostaria de pesquisar outro CEP? s/n");
+            resposta = Console.ReadLine();
         }
-        else
-        {
-            Console.WriteLine($"Erro: {response.ErrorMessage}");
-        }
+        Console.WriteLine("\nFim da pesquisa :)");
     }
 }

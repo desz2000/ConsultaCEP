@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConsultaCep")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cbd31d02869a506ac94f544e45d52416c436a0d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+838c1c5738dff863a869c33e21122f0bf02f1df5")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConsultaCep")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConsultaCep")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
