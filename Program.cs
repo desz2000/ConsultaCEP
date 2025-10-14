@@ -14,16 +14,22 @@ class Program
         Console.WriteLine("Hora de descobrir seu endereço!");
 
         Services services = new Services();
+        Endereco adress = new Endereco();
 
         string? resposta = "s";
 
         while(resposta == "s")
         {
-            services.ConsultaEndereco();
+            Console.Write("Digite o seu CEP (apenas numeros): ");
+            adress.Cep = Console.ReadLine();
+            
+            string enderecoRetorno = services.ConsultaEndereco(adress);
+            Console.WriteLine(enderecoRetorno);
+
 
             Console.WriteLine("Gostaria de pesquisar outro CEP? s/n");
             resposta = Console.ReadLine();
         }
-        Console.WriteLine("\nFim da pesquisa :)");
+        Console.WriteLine("Fim da pesquisa :)");
     }
 }

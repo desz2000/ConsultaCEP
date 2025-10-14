@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCep\\ConsultaCep.csproj": {}
+    "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCEP\\ConsultaCep.csproj": {}
   },
   "projects": {
-    "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCep\\ConsultaCep.csproj": {
+    "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCEP\\ConsultaCep.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCep\\ConsultaCep.csproj",
+        "projectUniqueName": "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCEP\\ConsultaCep.csproj",
         "projectName": "ConsultaCep",
-        "projectPath": "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCep\\ConsultaCep.csproj",
+        "projectPath": "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCEP\\ConsultaCep.csproj",
         "packagesPath": "C:\\Users\\desz2\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCep\\obj\\",
+        "outputPath": "C:\\Users\\desz2\\OneDrive\\Desktop\\Projetos\\ConsultaCEP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\desz2\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -45,7 +45,7 @@
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[13.0.3, )"
+              "version": "[13.0.4, )"
             },
             "RestSharp": {
               "target": "Package",
@@ -72,7 +72,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

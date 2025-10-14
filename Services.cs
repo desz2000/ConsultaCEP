@@ -3,12 +3,8 @@ using Newtonsoft.Json;
 
 public class Services
 {
-    public void ConsultaEndereco()
+    public string ConsultaEndereco(Endereco adress)
     {
-        Console.Write("Digite o seu CEP (apenas numeros): ");
-        Endereco adress = new Endereco();
-        adress.Cep = Console.ReadLine();
-
         var client = new RestClient("https://viacep.com.br/ws/");
         var request = new RestRequest($"{adress.Cep}/json/", Method.Get);
 
@@ -17,12 +13,11 @@ public class Services
         if (response.IsSuccessful)
         {
             adress = JsonConvert.DeserializeObject<Endereco>(response.Content);
-            Console.WriteLine($"Aqui esta o seu endereço: {adress.Logradouro}, {adress.Bairro}, {adress.Localidade} - {adress.Uf}");
-            //Console.WriteLine(response.Content);
+            return $"Aqui esta o seu endereço: {adress.Logradouro}, {adress.Bairro}, {adress.Localidade} - {adress.Uf}";
         }
         else
         {
-            Console.WriteLine($"Erro: {response.ErrorMessage}");
+            return $"Erro: {response.ErrorMessage}";
         }
     }
 }
